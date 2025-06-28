@@ -17,7 +17,7 @@
 		},
 		"aqapi_ls_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://api.openaq.org/v3/"
+			"defaultValue": "@{concat('https://api.openaq.org/v3/',linkedService().resource)}"
 		},
 		"containerUri": {
 			"type": "string",

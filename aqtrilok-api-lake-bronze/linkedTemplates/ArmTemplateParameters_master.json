@@ -12,7 +12,7 @@
 			"value": "https://airqualitydl.dfs.core.windows.net/"
 		},
 		"aqapi_ls_properties_typeProperties_url": {
-			"value": "https://api.openaq.org/v3/"
+			"value": "@{concat('https://api.openaq.org/v3/',linkedService().resource)}"
 		},
 		"containerUri": {
 			"value": ""

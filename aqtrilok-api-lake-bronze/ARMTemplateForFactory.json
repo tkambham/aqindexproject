@@ -17,7 +17,7 @@
 		},
 		"aqapi_ls_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://api.openaq.org/v3/"
+			"defaultValue": "@{concat('https://api.openaq.org/v3/',linkedService().resource)}"
 		}
 	},
 	"variables": {
@@ -96,7 +96,10 @@
 			"properties": {
 				"linkedServiceName": {
 					"referenceName": "aqapi_ls",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"resource": "locations"
+					}
 				},
 				"annotations": [],
 				"type": "RestResource",
@@ -154,6 +157,12 @@
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"parameters": {
+					"resource": {
+						"type": "String",
+						"defaultValue": "locations"
+					}
+				},
 				"annotations": [],
 				"type": "RestService",
 				"typeProperties": {
