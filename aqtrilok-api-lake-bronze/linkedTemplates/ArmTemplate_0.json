@@ -51,7 +51,13 @@
 				"typeProperties": {
 					"url": "[parameters('aqapi_ls_properties_typeProperties_url')]",
 					"enableServerCertificateValidation": true,
-					"authenticationType": "Anonymous"
+					"authenticationType": "Anonymous",
+					"authHeaders": {
+						"X-API-Key": {
+							"type": "SecureString",
+							"value": "ecrumouse69"
+						}
+					}
 				}
 			},
 			"dependsOn": []
