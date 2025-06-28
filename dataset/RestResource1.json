@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "aqapi_ls",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"resource": "locations"
+			}
 		},
 		"annotations": [],
 		"type": "RestResource",
