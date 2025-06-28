@@ -1,0 +1,20 @@
+{
+	"name": "aqdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "raw",
+				"folderPath": "bronze",
+				"fileSystem": "openaqdata"
+			}
+		},
+		"schema": {}
+	}
+}
