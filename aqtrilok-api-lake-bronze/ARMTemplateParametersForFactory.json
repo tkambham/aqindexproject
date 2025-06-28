@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "aqtrilok-api-lake-bronze"
+		},
+		"LS_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://airqualitydl.dfs.core.windows.net/"
+		},
+		"aqapi_ls_properties_typeProperties_url": {
+			"value": "https://api.openaq.org/v3/"
+		}
+	}
+}
