@@ -18,7 +18,8 @@
 				"folderPath": {
 					"value": "@dataset().sinkFolder",
 					"type": "Expression"
-				}
+				},
+				"fileSystem": "sink"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
