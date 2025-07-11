@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@JSON(\"xxxxdev\", \"xxxxtest\", \"xxxxprod\")",
+						"value": "@json('[\"xxxxdev\", \"xxxxtest\", \"xxxxprod\"]')",
 						"type": "Expression"
 					},
 					"activities": [
