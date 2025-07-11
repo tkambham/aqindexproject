@@ -1,0 +1,21 @@
+{
+	"name": "Excel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "FSI-2023-DOWNLOAD.xlsx",
+				"folderPath": "xxxxdev",
+				"fileSystem": "openaqdata"
+			}
+		},
+		"schema": []
+	}
+}
