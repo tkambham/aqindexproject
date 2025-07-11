@@ -139,6 +139,8 @@
 			{
 				"name": "Switch1_copy1",
 				"type": "Switch",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Set variable1_copy1",
