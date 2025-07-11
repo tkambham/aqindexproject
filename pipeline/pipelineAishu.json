@@ -174,14 +174,15 @@
 											"type": "ExcelSource",
 											"storeSettings": {
 												"type": "AzureBlobFSReadSettings",
-												"recursive": true,
+												"recursive": false,
 												"enablePartitionDiscovery": false
 											}
 										},
 										"sink": {
 											"type": "DelimitedTextSink",
 											"storeSettings": {
-												"type": "AzureBlobFSWriteSettings"
+												"type": "AzureBlobFSWriteSettings",
+												"copyBehavior": "FlattenHierarchy"
 											},
 											"formatSettings": {
 												"type": "DelimitedTextWriteSettings",
@@ -216,6 +217,12 @@
 									]
 								}
 							]
+						},
+						{
+							"value": "test"
+						},
+						{
+							"value": "prod"
 						}
 					]
 				}
