@@ -231,11 +231,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"sourceStorageAccount": {
-				"type": "string"
-			}
-		},
 		"variables": {
 			"environment": {
 				"type": "String"
