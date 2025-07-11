@@ -208,21 +208,12 @@
 									],
 									"outputs": [
 										{
-											"referenceName": "DelimitedText1",
-											"type": "DatasetReference",
-											"parameters": {
-												"sinkFolder": "@variables"
-											}
+											"referenceName": "DelimitedText2",
+											"type": "DatasetReference"
 										}
 									]
 								}
 							]
-						},
-						{
-							"value": "test"
-						},
-						{
-							"value": "prod"
 						}
 					]
 				}
